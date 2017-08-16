@@ -9,6 +9,7 @@ const app = express();
 app.engine('mustache', mustacheExpress());
 app.set('views', './views');
 app.set('view engine', 'mustache');
+app.use(express.static(__dirname + '/public'));
 
 app.get('/users/', function(req, res){
     res.render('users',data)
