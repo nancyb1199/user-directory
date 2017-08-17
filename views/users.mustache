@@ -18,7 +18,8 @@
     <div class="container">
           {{#users}}
           <div class="users">
-            <img src='{{avatar}}'> <br>
+            <!-- <img src='{{avatar}}'> <br> -->
+            <a href="/users/{{userid}}"><img src='{{avatar}}'></a>
             <p>{{name}}</p>
              {{#job}}
               <p>{{job}}</p>
