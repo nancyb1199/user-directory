@@ -15,7 +15,9 @@ app.get('/users/', function(req, res){
     res.render('users',data)
 });
 
-
+// app.get('/users/:name', function (req, res) {
+//   res.send();
+// })
 
 app.listen(3000, function () {
   console.log('Successfully started express application!');
